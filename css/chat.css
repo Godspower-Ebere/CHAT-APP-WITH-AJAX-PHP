@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #1d70ce), color-stop(50%, #0ab1f3));
+  background: linear-gradient(#1d70ce 50%, #0ab1f3 50%);
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .cont {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .cont .friends {
+  width: 30%;
+  min-width: 250px;
+  height: 100%;
+  background-color: #1B3895;
+  position: relative;
+}
+
+body .cont .friends .friends {
+  list-style-type: none;
+  height: 88%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+body .cont .friends .friends a {
+  text-decoration: none;
+}
+
+body .cont .friends .friends li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+body .cont .friends .friends .status {
+  position: relative;
+}
+
+body .cont .friends .friends .status img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+body .cont .friends .friends .status .fas {
+  position: absolute;
+  top: 70%;
+  right: 0%;
+  color: greenyellow;
+}
+
+body .cont .setting {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  top: 0;
+  left: -100%;
+  opacity: 0;
+  padding: 20px;
+  -webkit-transition: ease-in 1s;
+  transition: ease-in 1s;
+}
+
+body .cont .setting .left {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+body .cont .setting .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+body .cont .setting .details form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+}
+
+body .cont .setting .details form .button {
+  background-color: #1B3895;
+  color: white;
+  border-radius: 0px;
+  font-weight: bold;
+  font-size: 30px;
+  height: 60px;
+}
+
+body .cont .setting .details form input {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+body .cont .setting .details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+body .cont .head {
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.685);
+  height: 80px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .cont .head img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body .cont .head .tool {
+  color: white;
+  font-size: 40px;
+}
+
+body .cont .head .tool .logout {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  margin-right: 10px;
+}
+
+body .cont .head .tool i {
+  cursor: pointer;
+}
+
+body .welcome {
+  width: 70%;
+  min-width: 400px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .welcome .head {
+  padding: 10px;
+  width: 100%;
+  height: 10%;
+  background-color: #1B3895;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+body .welcome .head img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+body .welcome .head * {
+  margin-right: 10px;
+}
+
+body .welcome .message {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.82)), color-stop(rgba(255, 255, 255, 0.82)), to(rgba(255, 255, 255, 0.82))), url("../images/whatsapp-bg.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), url("../images/whatsapp-bg.jpg");
+}
+
+body .welcome .message .fa-arrow-down {
+  display: none;
+  position: absolute;
+  font-size: 30px;
+  color: black;
+  top: 85%;
+  left: 50%;
+  z-index: 10000;
+  cursor: pointer;
+  background-color: #1B3895;
+  color: white;
+  padding: 10px 13px;
+  border-radius: 50%;
+}
+
+body .welcome .message ul {
+  list-style-type: none;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 30px 20px;
+}
+
+body .welcome .message ul li {
+  margin-bottom: 20px;
+}
+
+body .welcome .message ul .right .rightchat {
+  padding: 5px 15px;
+  border-radius: 20px;
+  border-top-right-radius: 0px;
+  background: #dcf8c6;
+  width: 60%;
+  -webkit-box-shadow: 0 0 7px gray;
+          box-shadow: 0 0 7px gray;
+  position: relative;
+  left: 38%;
+}
+
+body .welcome .message ul .right .rightchat .delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .welcome .message ul .right .rightchat .delete a {
+  text-decoration: none;
+  color: red;
+}
+
+body .welcome .message ul .left .leftchat {
+  padding: 5px 15px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+  background: #fff;
+  width: 60%;
+  -webkit-box-shadow: 0 0 7px gray;
+          box-shadow: 0 0 7px gray;
+}
+
+body .welcome .message ul .left .leftchat .delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .welcome .message ul .left .leftchat .delete a {
+  text-decoration: none;
+  color: red;
+}
+
+body .welcome .message ul .left .leftchat small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: end;
+  color: gray;
+}
+
+body .welcome .send {
+  width: 100%;
+  height: 10%;
+  position: relative;
+}
+
+body .welcome .send textarea {
+  width: 100%;
+  height: 100%;
+  padding: 5px 45px 5px 55px;
+  border: none;
+  outline: none;
+  border-radius: 500px;
+  -webkit-box-shadow: 0px 0px 30px gray;
+          box-shadow: 0px 0px 30px gray;
+}
+
+body .welcome .send .emoji {
+  position: absolute;
+  top: 13%;
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  color: white;
+  background-color: #1B3895;
+}
+
+body .welcome .send .fas {
+  position: absolute;
+  top: 15%;
+  right: 0%;
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  background-color: #1B3895;
+}
+
+body .welcome .send .cont {
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  top: -220%;
+  left: 2%;
+  -webkit-box-shadow: 0px 0px 30px gray;
+          box-shadow: 0px 0px 30px gray;
+  border-radius: 20px;
+  display: none;
+}
+
+body .welcome .send .cont ul {
+  border-radius: 20px;
+  list-style-type: none;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  overflow-y: scroll;
+  padding: 5px;
+}
+
+body .welcome .send .cont ul li {
+  font-size: 20px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=chat.css.map */
